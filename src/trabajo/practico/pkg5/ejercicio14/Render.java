@@ -10,11 +10,14 @@ package trabajo.practico.pkg5.ejercicio14;
  */
 public class Render {
 
-    
-   private String formato;
+    private Proyecto proyecto;//asociacion unidireccional
+    private String formato;
 
-    public Render(String formato) {
+    public Render(Proyecto proyecto, String formato) {
+        this.proyecto = proyecto;
         this.formato = formato;
     }
+
+    
    
 }

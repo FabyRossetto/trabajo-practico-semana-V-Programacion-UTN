@@ -13,4 +13,19 @@ import java.util.Date;
 public class Pasaporte {
     private String numero;
     private Date fechaDeEmision;
+    private Titular titular;// asociacion bidireccional
+    private Foto foto; //composicion
+
+    public Pasaporte(String numero, Date fechaDeEmision, Titular titular) {
+        this.numero = numero;
+        this.fechaDeEmision = fechaDeEmision;
+        this.titular = titular;
+        this.foto = new Foto();
+        
+        
+         // Mantener la bidireccionalidad consistente
+        titular.setPasaporte(this);
+    }
+    
+    
 }

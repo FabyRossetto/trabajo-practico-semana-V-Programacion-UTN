@@ -12,4 +12,19 @@ public class Celular {
     private String imei;
     private String marca;
     private String modelo;
+    private Bateria bateria;//agregacion
+    private Usuario usuario;//asociacion bidireccional
+
+    public Celular(String imei, String marca, String modelo, Bateria bateria, Usuario usuario) {
+        this.imei = imei;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.bateria = bateria;
+        this.usuario = usuario;
+        
+        // Mantener bidireccionalidad
+        usuario.setCelular(this);
+    }
+    
+    
 }

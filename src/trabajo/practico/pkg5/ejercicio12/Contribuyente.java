@@ -11,4 +11,14 @@ package trabajo.practico.pkg5.ejercicio12;
 public class Contribuyente {
     private String nombre;
     private String cuil;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCuil() {
+        return cuil;
+    }
+    
+    
 }

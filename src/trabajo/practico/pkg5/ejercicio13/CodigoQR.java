@@ -12,10 +12,14 @@ public class CodigoQR {
 
     
     private String valor;
+    private Usuario usuario;//asociacion unidireccional
 
-    public CodigoQR(String valor) {
+    public CodigoQR(String valor, Usuario usuario) {
         this.valor = valor;
+        this.usuario = usuario;
     }
+
+    
     public String getValor() {
         return valor;
     }

@@ -11,4 +11,19 @@ package trabajo.practico.pkg5.ejercicio5;
 public class Computadora {
     private String marca;
     private String numeroSerie;
+    private PlacaMadre placa;//composicion
+    private Propietario propietario;//asociacion bidireccional
+
+    public Computadora(String marca, String numeroSerie, Propietario propietario) {
+        this.marca = marca;
+        this.numeroSerie = numeroSerie;
+        this.placa = new PlacaMadre();
+        this.propietario = propietario;
+        
+        propietario.setCompu(this);
+    }
+
+   
+    
+    
 }

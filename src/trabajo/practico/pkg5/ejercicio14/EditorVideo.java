@@ -11,8 +11,7 @@ package trabajo.practico.pkg5.ejercicio14;
 public class EditorVideo {
     
     public void exportar(String formato, Proyecto proyecto){
-        Render ren= new Render(formato);
-        Proyecto pro= new Proyecto(proyecto.getNombre(),proyecto.getDuraciónMinutos());
-        System.out.println(" Render: " + ren + "\n Proyecto: " + pro);
+        Render ren= new Render(proyecto,formato);
+        System.out.println(" Render: " + ren + "\n Proyecto: " + proyecto.getNombre());
     }
 }

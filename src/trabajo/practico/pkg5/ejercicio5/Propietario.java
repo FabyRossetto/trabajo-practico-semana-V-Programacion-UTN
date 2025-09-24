@@ -11,4 +11,11 @@ package trabajo.practico.pkg5.ejercicio5;
 public class Propietario {
     private String nombre;
     private String DNI;
+    private Computadora compu;//asociacion bidireccional
+
+    public void setCompu(Computadora compu) {
+        this.compu = compu;
+    }
 }
+
+    

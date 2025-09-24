@@ -11,4 +11,11 @@ package trabajo.practico.pkg5.ejercicio4;
 public class Cliente {
     private String nombre;
     private String DNI;
+    private TarjetaDeCredito tarjeta;//asociacion bidireccional
+
+    public void setTarjeta(TarjetaDeCredito tarjeta) {
+        this.tarjeta = tarjeta;
+    }
+
+    
 }

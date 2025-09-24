@@ -11,5 +11,10 @@ package trabajo.practico.pkg5.ejercicio2;
 public class Usuario {
     private String nombre;
     private String DNI;
+    private Celular celular;//asociacion bidireccional
     
+    
+    public void setCelular(Celular celular) {
+        this.celular = celular;
+    }
 }

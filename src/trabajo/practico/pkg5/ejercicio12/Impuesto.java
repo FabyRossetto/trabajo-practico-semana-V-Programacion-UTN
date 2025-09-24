@@ -10,10 +10,17 @@ package trabajo.practico.pkg5.ejercicio12;
  */
 public class Impuesto {
     private int monto;
+    private Contribuyente contribuyente;//asociacion unidireccional
 
     public int getMonto() {
         return monto;
     }
+
+    public Contribuyente getContribuyente() {
+        return contribuyente;
+    }
+    
+    
     
     
 }

@@ -13,4 +13,17 @@ import java.util.Date;
 public class TarjetaDeCredito {
     private String numero;
     private Date fechaDeVencimiento;
+    private Banco banco;// agregacion
+    private Cliente cliente;//asociacion bidireccional
+
+    public TarjetaDeCredito(String numero, Date fechaDeVencimiento, Banco banco, Cliente cliente) {
+        this.numero = numero;
+        this.fechaDeVencimiento = fechaDeVencimiento;
+        this.banco = banco;
+        this.cliente = cliente;
+        
+        cliente.setTarjeta(this);
+    }
+    
+    
 }

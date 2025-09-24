@@ -12,6 +12,7 @@ public class Reproductor {
     
     public void reproducir(Cancion cancion){
         
-        System.out.println("Se esta reproduciendo la cancion: " + cancion.getTitulo());
+        System.out.println("Se esta reproduciendo la cancion: " + cancion.getTitulo() +
+                           " de " + cancion.getArtista().getNombre());
     }
 }

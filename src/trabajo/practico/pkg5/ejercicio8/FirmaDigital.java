@@ -13,4 +13,7 @@ import java.time.LocalDate;
 public class FirmaDigital {
     private String codigoHash;
     private LocalDate fecha;
+    private Usuario usuario;//agregacion
+
+    
 }

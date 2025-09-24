@@ -11,4 +11,9 @@ package trabajo.practico.pkg5.ejercicio1;
 public class Titular {
     private String nombre;
     private String DNI;
+    private Pasaporte pasaporte;//asociacion bidireccional
+    
+    public void setPasaporte(Pasaporte pasaporte) {
+        this.pasaporte = pasaporte;
+    }
 }

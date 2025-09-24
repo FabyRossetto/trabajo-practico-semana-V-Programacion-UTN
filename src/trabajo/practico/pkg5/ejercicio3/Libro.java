@@ -11,4 +11,16 @@ package trabajo.practico.pkg5.ejercicio3;
 public class Libro {
     private String titulo;
     private String isbn;
+    private Autor autor;//asoaciacion unidireccional
+    private Editorial editorial;// agregacion
+
+    public Libro(String titulo, String isbn, Autor autor, Editorial editorial) {
+        this.titulo = titulo;
+        this.isbn = isbn;
+        this.autor = autor;
+        this.editorial = editorial;
+    }
+    
+    
+    
 }

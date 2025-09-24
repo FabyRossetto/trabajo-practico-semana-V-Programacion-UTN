@@ -11,4 +11,11 @@ package trabajo.practico.pkg5.ejercicio7;
 public class Conductor {
    private String nombre;
    private String licencia;
+   private Vehiculo auto;//asociacion bidireccional
+
+    public void setAuto(Vehiculo auto) {
+        this.auto = auto;
+    }
+   
+   
 }

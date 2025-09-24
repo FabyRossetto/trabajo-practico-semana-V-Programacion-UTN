@@ -11,4 +11,5 @@ package trabajo.practico.pkg5.ejercicio10;
 public class Titular {
     private String nombre;
     private String DNI;
+    private CuentaBancaria cuenta;//asociacion bidireccional
 }

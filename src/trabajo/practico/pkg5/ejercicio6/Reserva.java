@@ -14,4 +14,15 @@ import java.util.Date;
 public class Reserva {
     private Date fecha;
     private LocalTime hora;
+    private Cliente cliente;//asociacion unidireccional
+    private Mesa mesa;//agregacion
+
+    public Reserva(Date fecha, LocalTime hora, Cliente cliente, Mesa mesa) {
+        this.fecha = fecha;
+        this.hora = hora;
+        this.cliente = cliente;
+        this.mesa = mesa;
+    }
+    
+    
 }

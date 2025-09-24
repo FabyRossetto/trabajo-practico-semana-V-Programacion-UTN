@@ -12,10 +12,10 @@ public class GeneradorQR {
     
     
     public void generar(String valor,Usuario usuario){
-        Usuario usu= new Usuario(usuario.getNombre(),usuario.getEmail());
-        CodigoQR QR= new CodigoQR(valor);
+       
+        CodigoQR QR= new CodigoQR(valor,usuario);
         
-        System.out.println("El QR creado para " + usu + "es " + QR);
+        System.out.println("El QR creado para " + usuario.getNombre() + "es " + QR.getValor());
          // si no hago el toString en las otras clases va a salir la referencia
     }
 }
