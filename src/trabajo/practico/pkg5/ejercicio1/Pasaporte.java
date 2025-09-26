@@ -16,16 +16,58 @@ public class Pasaporte {
     private Titular titular;// asociacion bidireccional
     private Foto foto; //composicion
 
-    public Pasaporte(String numero, Date fechaDeEmision, Titular titular) {
+    public Pasaporte(String numero, Date fechaDeEmision,String imagen,String formato) {
         this.numero = numero;
         this.fechaDeEmision = fechaDeEmision;
-        this.titular = titular;
-        this.foto = new Foto();
+        this.foto = new Foto(imagen,formato);
         
-        
-         // Mantener la bidireccionalidad consistente
-        titular.setPasaporte(this);
     }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public Date getFechaDeEmision() {
+        return fechaDeEmision;
+    }
+
+    public void setFechaDeEmision(Date fechaDeEmision) {
+        this.fechaDeEmision = fechaDeEmision;
+    }
+
+    public Titular getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Titular titular) {
+        this.titular = titular;
+        if(titular != null && titular.getPasaporte()!=this){
+            titular.setPasaporte(this);
+        }
+    }
+
+    public Foto getFoto() {
+        return foto;
+    }
+
+    public void setFoto(Foto foto) {
+        this.foto = foto;
+    }
+
+    @Override
+    public String toString() {
+        return "Pasaporte{" + "numero=" + numero + ", fechaDeEmision=" + fechaDeEmision + ", foto=" + foto + '}';
+    }
+
+    
+    
+    
+    
+    
     
     
 }

@@ -10,6 +10,7 @@ package trabajo.practico.pkg5.ejercicio12;
  */
 public class Calculadora {
     
+    //dependencia de uso
     public void cancular(Impuesto impuesto){
         System.out.println("El impuesto a pagar del contribuyente " + impuesto.getContribuyente().getNombre()+ ", CUIL: " + impuesto.getContribuyente().getCuil()+ " es de : $ " +  impuesto.getMonto());
     }

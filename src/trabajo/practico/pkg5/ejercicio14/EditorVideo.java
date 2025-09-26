@@ -9,9 +9,10 @@ package trabajo.practico.pkg5.ejercicio14;
  * @author Faby
  */
 public class EditorVideo {
-    
+    //dependencia de creacion
     public void exportar(String formato, Proyecto proyecto){
-        Render ren= new Render(proyecto,formato);
-        System.out.println(" Render: " + ren + "\n Proyecto: " + proyecto.getNombre());
+        Render ren= new Render(formato);
+        ren.setProyecto(proyecto);
+        System.out.println(" Render: " + ren );
     }
 }

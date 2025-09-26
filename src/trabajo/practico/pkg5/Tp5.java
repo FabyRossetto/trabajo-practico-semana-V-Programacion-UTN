@@ -12,19 +12,12 @@ import trabajo.practico.pkg5.ejercicio11.Reproductor;
  *
  * @author Faby
  */
-public class TrabajoPractico5 {
+public class Tp5{
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) { 
         
-        Artista artista= new Artista(" Shakira "," pop");
-        Cancion cancion = new Cancion(" pies descalsos", artista);
-        Reproductor repro= new Reproductor();
-        
-        repro.reproducir(cancion);
-        
+      
         
         
     }

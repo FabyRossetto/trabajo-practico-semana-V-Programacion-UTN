@@ -13,10 +13,32 @@ public class Render {
     private Proyecto proyecto;//asociacion unidireccional
     private String formato;
 
-    public Render(Proyecto proyecto, String formato) {
-        this.proyecto = proyecto;
+    public Render( String formato) {
+       
         this.formato = formato;
     }
+
+    public Proyecto getProyecto() {
+        return proyecto;
+    }
+
+    public void setProyecto(Proyecto proyecto) {
+        this.proyecto = proyecto;
+    }
+
+    public String getFormato() {
+        return formato;
+    }
+
+    public void setFormato(String formato) {
+        this.formato = formato;
+    }
+
+    @Override
+    public String toString() {
+        return "Render{" + "proyecto=" + proyecto + ", formato=" + formato + '}';
+    }
+    
 
     
    

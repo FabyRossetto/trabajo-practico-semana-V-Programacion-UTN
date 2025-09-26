@@ -10,12 +10,12 @@ package trabajo.practico.pkg5.ejercicio13;
  */
 public class GeneradorQR {
     
-    
+    //dependencia de creacion
     public void generar(String valor,Usuario usuario){
        
-        CodigoQR QR= new CodigoQR(valor,usuario);
-        
-        System.out.println("El QR creado para " + usuario.getNombre() + "es " + QR.getValor());
-         // si no hago el toString en las otras clases va a salir la referencia
+        CodigoQR QR= new CodigoQR(valor);
+        QR.setUsuario(usuario);
+        System.out.println("El QR creado para " + usuario.getNombre() + " es " + QR.getValor());
+         
     }
 }

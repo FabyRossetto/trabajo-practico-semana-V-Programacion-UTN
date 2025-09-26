@@ -21,9 +21,24 @@ public class Proyecto {
         return nombre;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public int getDuraciónMinutos() {
         return duraciónMinutos;
     }
+
+    public void setDuraciónMinutos(int duraciónMinutos) {
+        this.duraciónMinutos = duraciónMinutos;
+    }
+
+    @Override
+    public String toString() {
+        return "Proyecto{" + "nombre=" + nombre + ", duracion en Minutos=" + duraciónMinutos + '}';
+    }
+
+   
     
     
     

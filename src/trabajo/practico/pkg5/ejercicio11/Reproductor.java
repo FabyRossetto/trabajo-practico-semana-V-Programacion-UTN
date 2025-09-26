@@ -9,10 +9,10 @@ package trabajo.practico.pkg5.ejercicio11;
  * @author Faby
  */
 public class Reproductor {
-    
+    //dependencia de uso
     public void reproducir(Cancion cancion){
         
         System.out.println("Se esta reproduciendo la cancion: " + cancion.getTitulo() +
-                           " de " + cancion.getArtista().getNombre());
+                           " de " + cancion.getArtista().getNombre() + " cuyo genero es " + cancion.getArtista().getGenero());
     }
 }
