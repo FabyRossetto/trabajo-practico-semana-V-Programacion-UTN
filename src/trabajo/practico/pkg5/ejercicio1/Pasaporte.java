@@ -62,12 +62,7 @@ public class Pasaporte {
     public String toString() {
         return "Pasaporte{" + "numero=" + numero + ", fechaDeEmision=" + fechaDeEmision + ", foto=" + foto + '}';
     }
+}
 
     
-    
-    
-    
-    
-    
-    
-}
+  

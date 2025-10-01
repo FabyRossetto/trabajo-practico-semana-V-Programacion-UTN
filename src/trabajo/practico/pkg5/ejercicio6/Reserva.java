@@ -4,25 +4,64 @@
  */
 package trabajo.practico.pkg5.ejercicio6;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Date;
+
 
 /**
  *
  * @author Faby
  */
 public class Reserva {
-    private Date fecha;
+    private LocalDate fecha;
     private LocalTime hora;
     private Cliente cliente;//asociacion unidireccional
     private Mesa mesa;//agregacion
 
-    public Reserva(Date fecha, LocalTime hora, Cliente cliente, Mesa mesa) {
+    public Reserva(LocalDate fecha, LocalTime hora, Mesa mesa) {
         this.fecha = fecha;
         this.hora = hora;
-        this.cliente = cliente;
         this.mesa = mesa;
     }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
+    }
+
+    public LocalTime getHora() {
+        return hora;
+    }
+
+    public void setHora(LocalTime hora) {
+        this.hora = hora;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public Mesa getMesa() {
+        return mesa;
+    }
+
+    public void setMesa(Mesa mesa) {
+        this.mesa = mesa;
+    }
+
+    @Override
+    public String toString() {
+        return "Reserva{" + "fecha=" + fecha + ", hora=" + hora + ", CLIENTE: " + cliente + ", MESA: " + mesa + '}';
+    }
+    
+    
     
     
 }

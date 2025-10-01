@@ -13,9 +13,46 @@ public class Cliente {
     private String DNI;
     private TarjetaDeCredito tarjeta;//asociacion bidireccional
 
+    public Cliente(String nombre, String DNI) {
+        this.nombre = nombre;
+        this.DNI = DNI;
+        
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDNI() {
+        return DNI;
+    }
+
+    public void setDNI(String DNI) {
+        this.DNI = DNI;
+    }
+
+    public TarjetaDeCredito getTarjeta() {
+        return tarjeta;
+    }
+
     public void setTarjeta(TarjetaDeCredito tarjeta) {
         this.tarjeta = tarjeta;
+        if(tarjeta!=null&&tarjeta.getCliente()!=this){
+            tarjeta.setCliente(this);
+        }
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "nombre=" + nombre + ", DNI=" + DNI + ", tarjeta=" + tarjeta + '}';
+    }
+    
+
+    
 
     
 }
